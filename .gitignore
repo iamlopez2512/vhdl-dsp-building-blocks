@@ -1,0 +1,39 @@
+# VHDL / simulators
+work-obj93.cf
+*.vcd
+*.ghw
+*.wlf
+*.cf
+
+# Simulation outputs
+sim/*
+!sim/.gitkeep
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# Docs generated
+docs/*.png
+docs/*.svg
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Vivado artifacts (for ex12_dds_nco)
+*.xpr
+*.jou
+*.log
+*.str
+*.backup*
+*.runs/
+*.cache/
+*.hw/
+*.sim/
+*.gen/
+*.ip_user_files/
+*.xci
+*.bd
+*.bda
+*.ui
